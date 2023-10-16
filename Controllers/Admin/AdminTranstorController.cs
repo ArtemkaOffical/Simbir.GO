@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Simbir.GO.App.DTO.Transport;
 using Simbir.GO.App.DTO.TransportDto;
 using Simbir.GO.App.Extensions;
 using Simbir.GO.App.Services;

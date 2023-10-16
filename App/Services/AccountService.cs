@@ -1,11 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 using Simbir.GO.App.DTO.AccountDto;
 using Simbir.GO.Domain.Models;
 using Simbir.GO.Infrastructure.Context;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using System.Text;
 
 namespace Simbir.GO.App.Services

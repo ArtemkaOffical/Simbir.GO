@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection.Extensions;
-using Simbir.GO.App.MiddleWare;
-using Simbir.GO.App.Services;
+﻿using Simbir.GO.App.Services;
 
 namespace Simbir.GO.App.Extensions
 {

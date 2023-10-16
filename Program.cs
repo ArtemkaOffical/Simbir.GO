@@ -1,13 +1,10 @@
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Simbir.GO.App.Extensions;
 using Simbir.GO.App.MiddleWare;
-using Simbir.GO.App.Services;
 using Simbir.GO.Infrastructure;
 using Simbir.GO.Infrastructure.Context;
 using System.Text;
@@ -31,6 +28,7 @@ namespace Simbir.GO
             {
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             });
+
             builder.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "VolgaIt", Version = "v1" });
@@ -58,7 +56,9 @@ namespace Simbir.GO
                     }
                 });
             });
+
             builder.Services.Configure<JwtOpt>(builder.Configuration.GetSection("JwtOpt"));
+
             builder.Services.AddDbContext<DataContext>(x => 
                 x.UseNpgsql(builder.Configuration.GetConnectionString("DataBase"))
                 .UseLazyLoadingProxies());

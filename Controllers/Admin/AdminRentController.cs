@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Simbir.GO.App.DTO.Rent;
 using Simbir.GO.App.Extensions;
 using Simbir.GO.App.Services;
-using System.Data;
 
 namespace Simbir.GO.Controllers.Admin
 {

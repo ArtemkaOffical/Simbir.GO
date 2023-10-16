@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Simbir.GO.App.DTO.AccountDto;
-using Simbir.GO.App.Extensions;
 using Simbir.GO.App.Services;
 
 namespace Simbir.GO.Controllers.Admin

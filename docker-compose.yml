@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  simbir.go:
+    image: ${DOCKER_REGISTRY-}simbirgo
+    build:
+      context: .
+      dockerfile: Dockerfile
